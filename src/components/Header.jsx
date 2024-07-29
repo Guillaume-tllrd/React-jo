@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <div className='header'>
             <img src="./logo.png" alt="logoJO" />
-            <h1>Tableau des athlètes français</h1>
+            <h1>Tableau des athlètes français médaillés</h1>
             <Navigation/>
         </div>
     );
