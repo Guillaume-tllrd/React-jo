@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Header from '../components/Header';
 import axios from 'axios';
+import Card from '../components/Card';
+import Filter from '../components/Filter';
+
 
 const Home = () => {
   const [dataAthlete, setDataAthlete] = useState([]);
@@ -15,12 +18,11 @@ const Home = () => {
     return (
         <div>
             <Header/>
-            <div>
-                {dataAthlete.map((athlete) => (
-          <ul key={athlete.id}>
-            {athlete.image} 
-          </ul>
-        ))}</div>
+            <Filter />
+            <ul>{dataAthlete.map((athlete) => (
+           <Card key={athlete.id} athlete={athlete} />
+        ))}</ul>
+                
         </div>
     );
 };

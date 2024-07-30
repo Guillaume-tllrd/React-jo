@@ -29,3 +29,21 @@
   list-style: none;
   cursor: pointer;
 }
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.card{
+  border: 1px solid black;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card img {
+  width: 200px;
+  height: 250px;
+}
