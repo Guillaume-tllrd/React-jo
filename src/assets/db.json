@@ -1,22 +1,60 @@
 {
-    "athlete": [
-        {
-            "name": "APITHY-BRUNET Manon",
-            "sport": "Escrime",
-            "golden medal": 1,
-            "silver medal": 0,
-            "bronze medal": 0,
-            "image": 0,
-            "id": 1
-        },
-        {
-            "name": "FERRAND PREVOT Pauline",
-            "sport": "VTT",
-            "golden medal": 1,
-            "silver medal": 0,
-            "bronze medal": 0,
-            "image": 0,
-            "id": 2
-        }
-    ]
+  "athletes": [
+    {
+      "name": "APITHY-BRUNET Manon",
+      "sport": "Escrime",
+      "golden_medal": 1,
+      "silver_medal": 0,
+      "bronze_medal": 0,
+      "image": 0,
+      "id": 1
+    },
+    {
+      "name": "FERRAND PREVOT Pauline",
+      "sport": "VTT",
+      "golden medal": 1,
+      "silver medal": 0,
+      "bronze medal": 0,
+      "image": 0,
+      "id": 2
+    },
+    {
+      "id": "d38d",
+      "name": "Alex",
+      "sport": "natation",
+      "goldenMedal": "1",
+      "silverMedal": "1",
+      "bronzeMedal": "0",
+      "image": "C:\Users\ACS\Desktop\onlineformapro\REACT\React jo\public\\logo.png"
+    }
+    },
+    {
+      "id": "24e2",
+      "name": "gui.ti",
+      "sport": "football",
+      "goldenMedal": "0",
+      "silverMedal": "1",
+      "bronzeMedal": "1",
+      "image": "C:\Users\ACS\Desktop\onlineformapro\REACT\React jo\public\\logo.png"
+    }
+    },
+    {
+      "id": "7648",
+      "name": "",
+      "sport": "",
+      "goldenMedal": "",
+      "silverMedal": "",
+      "bronzeMedal": "",
+      "image": ""
+    },
+    {
+      "id": "10a3",
+      "name": "",
+      "sport": "",
+      "goldenMedal": "",
+      "silverMedal": "",
+      "bronzeMedal": "",
+      "image": "C:\Users\ACS\Desktop\onlineformapro\REACT\React jo\public\\logo.png"
+    }
+  ]
 }
