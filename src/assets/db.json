@@ -1,0 +1,22 @@
+{
+    "athlete": [
+        {
+            "name": "APITHY-BRUNET Manon",
+            "sport": "Escrime",
+            "golden medal": 1,
+            "silver medal": 0,
+            "bronze medal": 0,
+            "image": 0,
+            "id": 1
+        },
+        {
+            "name": "FERRAND PREVOT Pauline",
+            "sport": "VTT",
+            "golden medal": 1,
+            "silver medal": 0,
+            "bronze medal": 0,
+            "image": 0,
+            "id": 2
+        }
+    ]
+}

@@ -1,8 +1,5 @@
-# React + Vite
+Reprendre un projet React : `npm i`
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Installer JSON-SERVER : `npm i -g json-server`
+On fait un script pour faire tourner le back, on copie le code en dessous et on le colle dans package.json
+Faire tourner le back : `json-server --w src/assets/db.json --port 3005`
