@@ -10,15 +10,6 @@
       "id": "2"
     },
     {
-      "id": "d38d",
-      "name": "Alex",
-      "sport": "natation",
-      "goldenMedal": "1",
-      "silverMedal": "1",
-      "bronzeMedal": "0",
-      "image": ""
-    },
-    {
       "id": "5484",
       "name": "Antoine DUPONT",
       "sport": "rugby",
@@ -26,6 +17,24 @@
       "silverMedal": "1",
       "bronzeMedal": "1",
       "image": "./dupont_antoine.jpg"
+    },
+    {
+      "id": "ba81",
+      "name": "Leon MARCHAND",
+      "sport": "Natation",
+      "goldenMedal": "1",
+      "silverMedal": "0",
+      "bronzeMedal": "0",
+      "image": "./leon_marchand.jpg"
+    },
+    {
+      "id": "29f6",
+      "name": "Manon  APITHY-BRUNET",
+      "sport": "Escrime",
+      "goldenMedal": "1",
+      "silverMedal": "0",
+      "bronzeMedal": "0",
+      "image": "./APITHY.jpg"
     }
   ]
 }

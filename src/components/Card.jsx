@@ -26,6 +26,7 @@ const Card = (props) => {
                 >
                 Supprimer
                 </button>
+                <button>Modifier</button>
             </section>
         </div>
     );

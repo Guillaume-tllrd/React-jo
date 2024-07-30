@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Filter = () => {
+    const [selectedInput, setSelectedInput] = useState("");
+
     return (
         <section className='filter_section'>
            <select id="sport" >
