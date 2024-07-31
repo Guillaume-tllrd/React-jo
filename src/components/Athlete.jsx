@@ -29,7 +29,7 @@ const Athlete = () => {
                 <span>{totalSilvermedals}</span>
                 <img src="./medaille-de-bronze.png" alt="" />
                 <span>{totalBronzemedals}</span>
-                <span>Total :</span>
+                <span>Total </span>
                 <span>{totalBronzemedals + totalGoldmedals + totalSilvermedals}</span>
             </div>
             <div className='filter_section'>
@@ -41,7 +41,7 @@ const Athlete = () => {
                 </select>
             </div>
             {selectedInput && (
-                <button onClick={() => setSelectedInput("")}>Annuler la recheche</button>
+                <button id='cancelbtn' onClick={() => setSelectedInput("")}>Annuler la recheche</button>
             )}
             <ul>
                 {dataAthlete
