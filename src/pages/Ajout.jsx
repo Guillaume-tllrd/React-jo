@@ -39,7 +39,7 @@ const Ajout = () => {
                 
                 <label htmlFor="sport">Discipline</label>
                 <select id="sport" onChange={(e) => setSport(e.target.value)} value={sport}>
-                    <option value="" disabled selected>Sélectionner une discipline</option>
+                    <option value="" disabled selected>Sélectionnez une discipline</option>
                     <option value="Athlétisme">Athlétisme</option>
                     <option value="Aviron">Aviron</option>
                     <option value="Badminton">Badminton</option>

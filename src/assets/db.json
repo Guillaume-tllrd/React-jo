@@ -1,22 +1,13 @@
 {
   "athletes": [
     {
-      "name": "FERRAND PREVOT Pauline",
-      "sport": "VTT",
-      "golden medal": 1,
-      "silver medal": 0,
-      "bronze medal": 0,
-      "image": 0,
-      "id": "2"
-    },
-    {
-      "id": "5484",
       "name": "Antoine DUPONT",
       "sport": "rugby",
-      "goldenMedal": "1",
-      "silverMedal": "1",
+      "goldenMedal": "3",
+      "silverMedal": "0",
       "bronzeMedal": "1",
-      "image": "./dupont_antoine.jpg"
+      "image": "./dupont_antoine.jpg",
+      "id": "5484"
     },
     {
       "id": "ba81",
@@ -28,13 +19,13 @@
       "image": "./leon_marchand.jpg"
     },
     {
-      "id": "29f6",
       "name": "Manon  APITHY-BRUNET",
       "sport": "Escrime",
       "goldenMedal": "1",
       "silverMedal": "0",
       "bronzeMedal": "0",
-      "image": "./APITHY.jpg"
+      "image": "./APITHY.jpg",
+      "id": "29f6"
     }
   ]
 }

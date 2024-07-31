@@ -43,7 +43,11 @@ ul {
   justify-content: center;
   align-items: center;
 }
-.card img {
+.card #photo_athlete {
   width: 200px;
   height: 250px;
+}
+.card .container_medal {
+  display: flex;
+  justify-content: center;
 }
