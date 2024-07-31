@@ -5,10 +5,11 @@ const Navigation = () => {
     return (
         <div className="navigation">
         <ul>
-          <NavLink to="/" >
+          {/* fonction fléchée anonyme */}
+          <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active first-link" : "")}>
             <li>Accueil</li>
           </NavLink>
-          <NavLink to="/ajout">
+          <NavLink to="/ajout" className={(nav) => (nav.isActive ? "nav-active second-link" : "")}>
             <li>Ajout</li>
           </NavLink>
         </ul>

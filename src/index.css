@@ -49,6 +49,41 @@
   list-style: none;
   cursor: pointer;
 }
+.nav-active {
+  position: relative;
+}
+.first-link::after {
+  content: "";
+  height: 4px;
+  width: 0;
+  background: linear-gradient(to right, rgb(31,52,143), rgb(0,177,237), rgb(113,183,51));
+  position: absolute;
+  border-radius: 10px;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: anim 0.6s ease forwards;
+}
+
+.second-link::after {
+  content: "";
+  height: 4px;
+  width: 0;
+  background: linear-gradient(to right, rgb(231,0,23), rgb(231,75,116), rgb(255,205,4)); /* Dégradé différent */
+  position: absolute;
+  border-radius: 10px;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: anim 0.6s ease forwards;
+}
+
+@keyframes anim {
+  to {
+    width: 100%;
+  }
+}
+  
 .athlete_section{
   margin: 20px auto;
   display: flex;
