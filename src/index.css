@@ -11,7 +11,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 
+
 }
 
 .header {
@@ -91,12 +91,12 @@
   align-items: center;
 }
 .medal-count{
-  border: 1px solid red;
   font-size: 1.8rem;
 }
 .medal-count img{
   height: 20px;
   width: 25px;
+  /* object-fit: cover; */
 }
 #sports{
   margin: 20px auto;
@@ -124,18 +124,123 @@ ul {
   gap: 30px;
 }
 .card{
-  border: 1px solid black;
-  min-width: 350px;
+  box-shadow: 1px 2px 10px 1px rgba(128, 128, 128, 0.5);
+  min-width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px 0;
+  border-radius: 10px;
 }
 .card #photo_athlete {
-  width: 200px;
+  width: 225px;
   height: 250px;
 }
-.card .container_medal {
-  display: flex;
+.card .description_card {
+   display: flex;
+   flex-direction: column;
   justify-content: center;
+}
+.card .description_card p:first-child {
+font-weight: 600;
+}
+
+.card .description_card p{
+  text-align: center;
+
+}
+.card .container_medal {
+ display: flex;
+ justify-content: center;
+ padding: 2px 0;
+}
+.btn_card {
+  margin: 10px 2px 0;
+  height: 25px;
+  width: 100px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.delete{
+  background: black;
+  color: white;
+}
+.delete:hover {
+  background: rgb(83, 77, 77);
+}
+.edit {
+background: white;
+}
+.edit:hover{
+  background: rgb(240, 236, 236);
+}
+.confirm {
+  background: green;
+  /* border: none; */
+  color: white;
+}
+.confirm:hover{
+  background: rgb(5, 175, 5);
+}
+input[type="number"] {
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  text-align: center;
+  height: 20px;
+  border-radius: 5px;
+}
+input[type="number"]:focus {
+  border-color: #66afe9;
+  outline: none;
+  box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-container h1{
+  padding: 25px;
+}
+.form_ajout {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+label {
+  display: block;
+  color: #555;
+}
+
+.form_ajout input[type="text"], input[type="number"], select {
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+input[type="submit"]:hover {
+  background-color: #218838;
+}
+option {
+  padding: 10px;
 }

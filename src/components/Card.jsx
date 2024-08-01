@@ -60,19 +60,19 @@ const Card = (props) => {
                     <p>{props.athlete.bronzeMedal}</p>
                 </div> )
                 }
-                
-                <button onClick={() => {
+                <div className="btn_container">
+                {isEditing ? (
+                    <button className='btn_card confirm' onClick={() => handleAthleteEdit()}>Valider</button>
+                ) : (
+                <button className='btn_card edit' onClick={() => setIsEditing(true)}>Modifier</button>
+                )}
+                 <button className='btn_card delete' onClick={() => {
                   if (window.confirm("Voulez-vous vraiment supprimer cet athlète?")) {
                     handleAthleteDelete();
                     }
                 }}
                 >Supprimer</button>
-                
-                {isEditing ? (
-                    <button onClick={() => handleAthleteEdit()}>Valider</button>
-                ) : (
-                <button onClick={() => setIsEditing(true)}>Modifier</button>
-                )}
+                </div>
                 
                 
             </section>

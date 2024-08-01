@@ -1,22 +1,13 @@
 {
   "athletes": [
     {
-      "name": "Antoine DUPONT",
-      "sport": "rugby",
-      "goldenMedal": "4",
-      "silverMedal": "0",
-      "bronzeMedal": "1",
-      "image": "./dupont_antoine.jpg",
-      "id": "5484"
-    },
-    {
-      "id": "ba81",
       "name": "Leon MARCHAND",
       "sport": "Natation",
-      "goldenMedal": "1",
+      "goldenMedal": "3",
       "silverMedal": "0",
       "bronzeMedal": "0",
-      "image": "./leon_marchand.jpg"
+      "image": "./leon_marchand.jpg",
+      "id": "ba81"
     },
     {
       "name": "Manon  APITHY-BRUNET",
@@ -26,6 +17,123 @@
       "bronzeMedal": "0",
       "image": "./APITHY.jpg",
       "id": "29f6"
+    },
+    {
+      "name": " Auriane MALLO-BRETON",
+      "sport": "Escrime",
+      "goldenMedal": "0",
+      "silverMedal": "1",
+      "bronzeMedal": "0",
+      "image": "./MALLO-BRETON Auriane.jpg",
+      "id": "c52a"
+    },
+    {
+      "id": "83b3",
+      "name": "Rugby à 7",
+      "sport": "Rugby à sept",
+      "goldenMedal": "1",
+      "silverMedal": "0",
+      "bronzeMedal": "0",
+      "image": "./rugby7.jpg"
+    },
+    {
+      "id": "741b",
+      "name": "Casandre BEAUGRAND",
+      "sport": "Triathlon",
+      "goldenMedal": "1",
+      "silverMedal": "0",
+      "bronzeMedal": "0",
+      "image": "./beaugrandcassandre.jpg"
+    },
+    {
+      "id": "77c3",
+      "name": "Nicolas GESTIN",
+      "sport": "Canoë-kayak",
+      "goldenMedal": "1",
+      "silverMedal": "0",
+      "bronzeMedal": "0",
+      "image": "./gestinnicolas.jpg"
+    },
+    {
+      "id": "e202",
+      "name": "Sara BALZER",
+      "sport": "Escrime",
+      "goldenMedal": "0",
+      "silverMedal": "1",
+      "bronzeMedal": "0",
+      "image": "./sarabalzer.jpg"
+    },
+    {
+      "id": "4d28",
+      "name": "Yannick BOREL",
+      "sport": "Escrime",
+      "goldenMedal": "0",
+      "silverMedal": "1",
+      "bronzeMedal": "0",
+      "image": "./borelyannick.jpg"
+    },
+    {
+      "id": "d095",
+      "name": "Épée par équipes - femmes",
+      "sport": "Escrime",
+      "goldenMedal": "0",
+      "silverMedal": "1",
+      "bronzeMedal": "0",
+      "image": "./épéefemme.jpg"
+    },
+    {
+      "id": "7bf8",
+      "name": "Thomas CHIRAULT",
+      "sport": "Tir à l'arc",
+      "goldenMedal": "0",
+      "silverMedal": "1",
+      "bronzeMedal": "0",
+      "image": "./thomaschirault.jpg"
+    },
+    {
+      "id": "1e93",
+      "name": "Joan-Benjamin GABA ",
+      "sport": "Judo",
+      "goldenMedal": "0",
+      "silverMedal": "1",
+      "bronzeMedal": "0",
+      "image": "./gabajoan.jpg"
+    },
+    {
+      "id": "b959",
+      "name": "Anastasiia KIRPICHNIKOVA",
+      "sport": "Natation",
+      "goldenMedal": "0",
+      "silverMedal": "1",
+      "bronzeMedal": "0",
+      "image": "./anastasiia.jpg"
+    },
+    {
+      "id": "d666",
+      "name": "Victor KORETZKY",
+      "sport": "Cyclisme",
+      "goldenMedal": "0",
+      "silverMedal": "1",
+      "bronzeMedal": "0",
+      "image": "./victor.jpg"
+    },
+    {
+      "id": "ef66",
+      "name": "Concours complet par équipes",
+      "sport": "Équitation",
+      "goldenMedal": "0",
+      "silverMedal": "1",
+      "bronzeMedal": "0",
+      "image": "./karim.jpg"
+    },
+    {
+      "id": "0bd2",
+      "name": "Luka MKHEIDZE",
+      "sport": "Judo",
+      "goldenMedal": "0",
+      "silverMedal": "1",
+      "bronzeMedal": "0",
+      "image": "./luka.jpg"
     }
   ]
 }

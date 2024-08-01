@@ -29,8 +29,11 @@ const Athlete = () => {
                 <span>{totalSilvermedals}</span>
                 <img src="./medaille-de-bronze.png" alt="" />
                 <span>{totalBronzemedals}</span>
-                <span>Total </span>
-                <span>{totalBronzemedals + totalGoldmedals + totalSilvermedals}</span>
+            </div>
+            <div className="total-medal">
+                <span>Total : </span>
+                <span>{totalBronzemedals + totalGoldmedals
+                + totalSilvermedals}</span>
             </div>
             <div className='filter_section'>
                 <select id="sports" onChange={(e) => setSelectedInput(e.target.value)}>

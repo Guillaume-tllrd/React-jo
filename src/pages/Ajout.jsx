@@ -30,10 +30,11 @@ const Ajout = () => {
         setImage("");
     }
     return (
-        <div>
-           <Header /> 
+        <>
+        <Header /> 
+        <div class="form-container">
            <h1>Ajouter un nouveau médaillé:</h1>
-           <form onSubmit={handleFormSubmit}>
+           <form className="form_ajout" onSubmit={handleFormSubmit}>
                 <label htmlFor="name">Nom</label>
                 <input id='name' type="text" onChange={(e) => setName(e.target.value)} value={name}/>
                 
@@ -95,6 +96,7 @@ const Ajout = () => {
                 <input type="submit" value="Ajouter"/>
            </form>
         </div>
+        </>
     );
 };
 
