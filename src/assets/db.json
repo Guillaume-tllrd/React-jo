@@ -82,15 +82,6 @@
       "image": "./épéefemme.jpg"
     },
     {
-      "id": "7bf8",
-      "name": "Thomas CHIRAULT",
-      "sport": "Tir à l'arc",
-      "goldenMedal": "0",
-      "silverMedal": "1",
-      "bronzeMedal": "0",
-      "image": "./thomaschirault.jpg"
-    },
-    {
       "id": "1e93",
       "name": "Joan-Benjamin GABA ",
       "sport": "Judo",
@@ -134,6 +125,96 @@
       "silverMedal": "1",
       "bronzeMedal": "0",
       "image": "./luka.jpg"
+    },
+    {
+      "id": "9e15",
+      "name": "Épreuve par équipes - hommes",
+      "sport": "Tir à l'arc",
+      "goldenMedal": "0",
+      "silverMedal": "1",
+      "bronzeMedal": "0",
+      "image": "./arc.jpg"
+    },
+    {
+      "id": "93a3",
+      "name": "Clarisse AGBEGNENOU",
+      "sport": "Judo",
+      "goldenMedal": "0",
+      "silverMedal": "0",
+      "bronzeMedal": "1",
+      "image": "./clarisse.jpg"
+    },
+    {
+      "id": "0c66",
+      "name": "Sabre par équipes - hommes",
+      "sport": "Escrime",
+      "goldenMedal": "0",
+      "silverMedal": "0",
+      "bronzeMedal": "1",
+      "image": "./sabre.jpg"
+    },
+    {
+      "id": "7182",
+      "name": "Léo BERGERE",
+      "sport": "Triathlon",
+      "goldenMedal": "0",
+      "silverMedal": "0",
+      "bronzeMedal": "1",
+      "image": "./leobergere.jpg"
+    },
+    {
+      "id": "fc6c",
+      "name": "Shirine BOUKLI",
+      "sport": "Judo",
+      "goldenMedal": "0",
+      "silverMedal": "0",
+      "bronzeMedal": "1",
+      "image": "./boukli.jpg"
+    },
+    {
+      "id": "fbb8",
+      "name": "Amandine BUCHARD",
+      "sport": "Judo",
+      "goldenMedal": "0",
+      "silverMedal": "0",
+      "bronzeMedal": "1",
+      "image": "./buchard.jpg"
+    },
+    {
+      "id": "2131",
+      "name": "Sarah Leonie CYSIQUE",
+      "sport": "Judo",
+      "goldenMedal": "0",
+      "silverMedal": "0",
+      "bronzeMedal": "1",
+      "image": "./cysique.jpg"
+    },
+    {
+      "id": "5ef5",
+      "name": "Anthony JEANJEAN",
+      "sport": "Cyclisme",
+      "goldenMedal": "0",
+      "silverMedal": "0",
+      "bronzeMedal": "1",
+      "image": "./jeanjean.jpg"
+    },
+    {
+      "id": "4ca3",
+      "name": "Maxime-Gael NGAYAP HAMBOU",
+      "sport": "Judo",
+      "goldenMedal": "0",
+      "silverMedal": "0",
+      "bronzeMedal": "1",
+      "image": "../ngayap.jpg"
+    },
+    {
+      "id": "627c",
+      "name": " Pauline FERRAND PREVOT ",
+      "sport": "Cyclisme",
+      "goldenMedal": "1",
+      "silverMedal": "0",
+      "bronzeMedal": "0",
+      "image": "./pauline.jpg"
     }
   ]
 }

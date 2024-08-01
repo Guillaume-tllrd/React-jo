@@ -35,14 +35,14 @@ const Athlete = () => {
                 <span>{totalBronzemedals + totalGoldmedals
                 + totalSilvermedals}</span>
             </div>
-            <div className='filter_section'>
+            <section className='filter_section'>
                 <select id="sports" onChange={(e) => setSelectedInput(e.target.value)}>
                     <option selected disabled>Sélectionnez une discipline</option>
                     {select.map((discipline) => (
                         <option key={discipline} value={discipline}>{discipline}</option>
                     ))}
                 </select>
-            </div>
+            </section>
             {selectedInput && (
                 <button id='cancelbtn' onClick={() => setSelectedInput("")}>Annuler la recheche</button>
             )}
