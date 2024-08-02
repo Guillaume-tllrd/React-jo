@@ -215,6 +215,15 @@
       "silverMedal": "0",
       "bronzeMedal": "0",
       "image": "./pauline.jpg"
+    },
+    {
+      "id": "3077",
+      "name": "Titouan CASTRYCK ",
+      "sport": "Canoë-kayak",
+      "goldenMedal": "0",
+      "silverMedal": "1",
+      "bronzeMedal": "0",
+      "image": "./titouan.jpg"
     }
   ]
 }
