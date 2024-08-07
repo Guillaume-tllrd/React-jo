@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Header from '../components/Header';
 import axios from 'axios';
+import AppContext from '../components/AppContext';
 
 const Ajout = () => {
     const [name, setName] = useState("");
@@ -10,6 +11,7 @@ const Ajout = () => {
     const [bronzeMedal, setBronzeMedal] = useState("");
     const [genre, setGenre] = useState("");
     const [image, setImage] = useState("");
+    const app = useContext(AppContext);
 
     function handleFormSubmit(e) {
         e.preventDefault();
@@ -32,9 +34,9 @@ const Ajout = () => {
     return (
         <>
         <Header /> 
-        <div class="form-container">
+        <div class={`form-container ${app.theme === "dark" ? "dark" : ""}`}>
            <h1>Ajouter un nouveau médaillé:</h1>
-           <form className="form_ajout" onSubmit={handleFormSubmit}>
+           <form className={`form_ajout`} onSubmit={handleFormSubmit}>
                 <label htmlFor="name">Nom</label>
                 <input id='name' type="text" onChange={(e) => setName(e.target.value)} value={name}/>
                 

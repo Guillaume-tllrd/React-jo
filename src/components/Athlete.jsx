@@ -1,9 +1,12 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Card from "./Card";
+import AppContext from './AppContext';
 
 const Athlete = () => {
     
+    const app = useContext(AppContext);
+
     const [selectedInput, setSelectedInput] = useState("");
     const select = ["Athlétisme", "Aviron", "Badminton", "Basket-ball", "Boxe", "Canoë-kayak", "Cyclisme", "Équitation", "Escrime", "Football", "Golf", "Gymnastique", "Haltérophilie", "Handball", "Hockey sur gazon", "Judo", "Karaté", "Lutte", "Natation", "Pentathlon moderne", "Rugby à sept", "Skateboard", "Surf", "Taekwondo", "Tennis", "Tennis de table", "Tir", "Tir à l'arc", "Triathlon", "Voile", "Volleyball"];
 
@@ -21,7 +24,7 @@ const Athlete = () => {
     const totalBronzemedals = dataAthlete.reduce((sum, athlete) => (sum + Number.parseInt(athlete.bronzeMedal)), 0);
 
     return (
-        <section className='athlete_section'>
+        <section className={`athlete_section ${app.theme === "dark" ? "dark" : ""}`}>
             <div className='medal-count'>
                 <img src="./medaille-dor.png" alt="" />
                 <span>{totalGoldmedals}</span>
@@ -36,7 +39,7 @@ const Athlete = () => {
                 + totalSilvermedals}</span>
             </div>
             <section className='filter_section'>
-                <select id="sports" onChange={(e) => setSelectedInput(e.target.value)}>
+                <select className={app.theme === "dark" ? "dark" : ""} id="sports" onChange={(e) => setSelectedInput(e.target.value)}>
                     <option selected disabled>Sélectionnez une discipline</option>
                     {select.map((discipline) => (
                         <option key={discipline} value={discipline}>{discipline}</option>

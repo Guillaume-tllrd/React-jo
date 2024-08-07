@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
+import AppContext from './AppContext';
 
 const Navigation = () => {
+  const app = useContext(AppContext);
+  
     return (
         <div className="navigation">
         <ul>
@@ -12,6 +15,12 @@ const Navigation = () => {
           <NavLink to="/ajout" className={(nav) => (nav.isActive ? "nav-active second-link" : "")}>
             <li>Ajout</li>
           </NavLink>
+          {app.theme === "dark" ? (
+            <button className='btntogglelight' onClick={app.toggleTheme}>Light mode</button>
+          ) : (
+            <button className='btntoggledark' onClick={app.toggleTheme}>Dark mode</button>
+          )}
+          
         </ul>
         </div>
 
