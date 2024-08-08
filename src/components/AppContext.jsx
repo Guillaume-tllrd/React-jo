@@ -4,7 +4,7 @@ const AppContext = createContext()
 
    export function AppProvider(props){
 
-        const [theme, setTheme] = useState("dark");
+        const [theme, setTheme] = useState("");
         function toggleTheme(){
             if(theme === "dark"){
                 setTheme("light")

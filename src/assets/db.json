@@ -3,9 +3,9 @@
     {
       "name": "Leon MARCHAND",
       "sport": "Natation",
-      "goldenMedal": "3",
+      "goldenMedal": "4",
       "silverMedal": "0",
-      "bronzeMedal": "0",
+      "bronzeMedal": "1",
       "image": "./leon_marchand.jpg",
       "id": "ba81"
     },
@@ -82,13 +82,13 @@
       "image": "./épéefemme.jpg"
     },
     {
-      "id": "1e93",
       "name": "Joan-Benjamin GABA ",
       "sport": "Judo",
       "goldenMedal": "0",
       "silverMedal": "1",
       "bronzeMedal": "0",
-      "image": "./gabajoan.jpg"
+      "image": "./gabajoan.jpg",
+      "id": "1e93"
     },
     {
       "id": "b959",

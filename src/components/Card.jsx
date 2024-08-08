@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 const Card = (props) => {
     const [isEditing, setIsEditing] = useState(false);
     const [editGoldMedal, setEditGoldMedal] = useState("");
@@ -24,7 +24,7 @@ const Card = (props) => {
         window.location.reload();
     }
     return (
-        <div className='card'>
+        <Link id='a-card' to={`athlete/${props.athlete.id}`}><div className='card'>
             <div className='img_card'>
             <img id="photo_athlete" src={props.athlete.image} alt={`image de ${props.athlete.name}`} />
             </div>
@@ -76,7 +76,7 @@ const Card = (props) => {
                 
                 
             </section>
-        </div>
+        </div></Link>
     );
 };
 
