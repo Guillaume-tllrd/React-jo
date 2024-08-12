@@ -15,6 +15,9 @@ const Navigation = () => {
           <NavLink to="/ajout" className={(nav) => (nav.isActive ? "nav-active second-link" : "")}>
             <li>Ajout</li>
           </NavLink>
+          <NavLink to="/favoris" className={(nav) => (nav.isActive ? "nav-active second-link" : "")}>
+            <li>Favoris</li>
+          </NavLink>
           {app.theme === "dark" ? (
             <button className='btntogglelight' onClick={app.toggleTheme}>Light mode</button>
           ) : (

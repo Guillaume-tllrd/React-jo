@@ -1,7 +1,8 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-const Card = (props) => {
+import LikeIcon from './LikeIcon'
+const Card = ({athlete}) => {
     const [isEditing, setIsEditing] = useState(false);
     const [editGoldMedal, setEditGoldMedal] = useState("");
     const [editSilverMedal, setEditSilverMedal] = useState("");
@@ -9,57 +10,58 @@ const Card = (props) => {
 
     function handleAthleteEdit(){
         const data = {
-            name: props.athlete.name,
-            sport: props.athlete.sport,
-            goldenMedal: editGoldMedal ? editGoldMedal : props.athlete.goldenMedal,
-            silverMedal: editSilverMedal ? editSilverMedal : props.athlete.silverMedal,
-            bronzeMedal: editBronzeMedal ? editBronzeMedal : props.athlete.bronzeMedal,
-            image: props.athlete.image,
+            name: athlete.name,
+            sport: athlete.sport,
+            goldenMedal: editGoldMedal ? editGoldMedal : athlete.goldenMedal,
+            silverMedal: editSilverMedal ? editSilverMedal : athlete.silverMedal,
+            bronzeMedal: editBronzeMedal ? editBronzeMedal : athlete.bronzeMedal,
+            image: athlete.image,
         }
-        axios.put("http://localhost:3005/athletes/" + props.athlete.id, data).then(() => {setIsEditing(false)});
+        axios.put("http://localhost:3005/athletes/" + athlete.id, data).then(() => {setIsEditing(false)});
         window.location.reload();
     }
     function handleAthleteDelete(){
-        axios.delete("http://localhost:3005/athletes/" + props.athlete.id);
+        axios.delete("http://localhost:3005/athletes/" + athlete.id);
         window.location.reload();
     }
     return (
         <div className='card'>
             <div className='img_card'>
-            <Link id='a-card' to={`athlete/${props.athlete.id}`}><img id="photo_athlete" src={props.athlete.image} alt={`image de ${props.athlete.name}`} /></Link>
+            <Link id='a-card' to={`athlete/${athlete.id}`}><img id="photo_athlete" src={athlete.image} alt={`image de ${athlete.name}`} /></Link>
             </div>
             <section className='description_card'>
-                <p>{props.athlete.name}</p>
-                <p>{props.athlete.sport}</p>
+                <p>{athlete.name}</p>
+                <p>{athlete.sport}</p>
                 
                 {isEditing ? (
-                <input type="number" defaultValue={editGoldMedal ? editGoldMedal : props.athlete.goldenMedal} onChange={(e) => setEditGoldMedal(e.target.value)}/>
+                <input type="number" defaultValue={editGoldMedal ? editGoldMedal : athlete.goldenMedal} onChange={(e) => setEditGoldMedal(e.target.value)}/>
                 ) : (
                 <div className='container_medal'>
                     <img src="./medaille-dor.png" alt="img médaille d'or" />
-                    <p> {props.athlete.goldenMedal}</p>
+                    <p> {athlete.goldenMedal}</p>
                 </div>
                 )
                 }
 
                 {isEditing ? (
-                <input type="number" defaultValue={editSilverMedal ? editSilverMedal : props.athlete.silverMedal} onChange={(e) => setEditSilverMedal(e.target.value)} />
+                <input type="number" defaultValue={editSilverMedal ? editSilverMedal : athlete.silverMedal} onChange={(e) => setEditSilverMedal(e.target.value)} />
                 ) : (
                     <div className='container_medal'>
                         <img src="./medaille-dargent.png" alt="img médaille d'or" />
-                        <p>{props.athlete.silverMedal}</p>
+                        <p>{athlete.silverMedal}</p>
                     </div>
                  )
                 }
                 
                 {isEditing ? (
-                <input type="number" defaultValue={editBronzeMedal ? editBronzeMedal : props.athlete.bronzeMedal} onChange={(e) => setEditBronzeMedal(e.target.value)} />
+                <input type="number" defaultValue={editBronzeMedal ? editBronzeMedal : athlete.bronzeMedal} onChange={(e) => setEditBronzeMedal(e.target.value)} />
                 ) : (
                 <div className='container_medal'>
                     <img src="./medaille-de-bronze.png" alt="img médaille d'or" />
-                    <p>{props.athlete.bronzeMedal}</p>
+                    <p>{athlete.bronzeMedal}</p>
                 </div> )
                 }
+                <LikeIcon athleteId={athlete.id} />
                 <div className="btn_container">
                 {isEditing ? (
                     <button className='btn_card confirm' onClick={() => handleAthleteEdit()}>Valider</button>
