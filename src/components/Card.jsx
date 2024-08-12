@@ -24,9 +24,9 @@ const Card = (props) => {
         window.location.reload();
     }
     return (
-        <Link id='a-card' to={`athlete/${props.athlete.id}`}><div className='card'>
+        <div className='card'>
             <div className='img_card'>
-            <img id="photo_athlete" src={props.athlete.image} alt={`image de ${props.athlete.name}`} />
+            <Link id='a-card' to={`athlete/${props.athlete.id}`}><img id="photo_athlete" src={props.athlete.image} alt={`image de ${props.athlete.name}`} /></Link>
             </div>
             <section className='description_card'>
                 <p>{props.athlete.name}</p>
@@ -76,7 +76,7 @@ const Card = (props) => {
                 
                 
             </section>
-        </div></Link>
+        </div>
     );
 };
 
