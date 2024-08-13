@@ -1,32 +1,43 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React, { useState, useEffect } from 'react';
 
-const LikeIcon = ({athleteId}) => {
-    console.log(athleteId)
+const LikeIcon = ({ athleteId }) => {
+    const [liked, setLiked] = useState(false);
 
-    function addStorage(){
-        // on déclare une var si il y quelques chose dans la boite athletes local storage tu me l'affiche en mettant des virgules sinon tableau vide
+    // Utiliser useEffect pour initialiser l'état liked
+    useEffect(() => {
         let storedData = window.localStorage.athletes ? window.localStorage.athletes.split(",") : [];
-        // si il n'y a pas de athleteId (passé en string car de base c un number) dans le tableau alors tu me fais un push de athleteId en gros on s'assure qu'il n'y a pas de double et ensuite on le push
-        if(!storedData.includes(athleteId.toString())){
-            storedData.push(athleteId);
-            // dans le localStorage la boite va s'appeler movies:
-            window.localStorage.athletes = storedData
+        // Si l'athleteId est dans le localStorage, on met liked à true
+        if (storedData.includes(athleteId.toString())) {
+            setLiked(true);
         }
+    }, [athleteId]); // dépendance de useEffect, pour ne le faire qu'à l'arrivée de athleteId
+
+    const addStorage = () => {
+        let storedData = window.localStorage.athletes ? window.localStorage.athletes.split(",") : [];
+        if (!storedData.includes(athleteId.toString())) {
+            storedData.push(athleteId);
+            window.localStorage.athletes = storedData;
+        }
+        setLiked(true); // On met à jour l'état liked après avoir ajouté l'athleteId au localStorage
     }
+
     const deleteStorage = () => {
-        // on récupère la data qui est stockée
         let storedData = window.localStorage.athletes.split(",");
-        // tous les id qui ne sont pas égaux à movie.id tu les gardes donc tu supprimes celui qui a le mm id et après on refait un stockage
-        let newData = storedData.filter((id) => id != athleteId)
+        let newData = storedData.filter((id) => id !== athleteId.toString());
         window.localStorage.athletes = newData;
+        setLiked(false); // On met à jour l'état liked après avoir supprimé l'athleteId du localStorage
+        window.location.reload()
     }
+
     return (
         <div>
-            <button onClick={() => addStorage()}>coeur</button>
-            <button onClick={() =>deleteStorage()}> pas coeur</button>
+            {liked ? (
+                <button onClick={deleteStorage}>Pas coeur</button>
+            ) : (
+                <button onClick={addStorage}>Coeur</button>
+            )}
         </div>
-    )
+    );
 };
 
 export default LikeIcon;

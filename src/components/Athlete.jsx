@@ -22,7 +22,7 @@ const Athlete = () => {
     useEffect(() => {
         axios
             .get("http://localhost:3005/athletes")
-            .then((res) => console.log(res.data)) 
+            .then((res) => setDataAthlete(res.data)) 
             
     },[]);
 
