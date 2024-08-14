@@ -31,10 +31,12 @@ const Favoris = () => {
         <Header/>
         <h2>Mes favoris</h2>
         <div className="result">
-          {console.log(favListData)}
-       {favListData.length > 0 && favListData.map((athlete) => (
-        <Card key={athlete.id} athlete={athlete} />
-       ))}
+          
+       {favListData.length > 0 ? (favListData.map((athlete) => (
+        <Card key={athlete.id} athlete={athlete} />))) : (
+          <p>Aucun athlète sélectionné</p>
+        )
+       }
       </div>
         
         </>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart as faHeartSolid } from '@fortawesome/free-solid-svg-icons';
-import { faHeart as faHeartRegular } from '@fortawesome/free-regular-svg-icons';
+
 
 const LikeIcon = ({ athleteId }) => {
     const [liked, setLiked] = useState(false);
@@ -34,10 +34,14 @@ const LikeIcon = ({ athleteId }) => {
 
     return (
         <div>
-            {liked ? (
-                <button onClick={deleteStorage}><FontAwesomeIcon icon={faHeartSolid} /></button>
+          {liked ? (
+                <button className="btncoeur plein" onClick={deleteStorage}>
+                    <FontAwesomeIcon icon={faHeartSolid} />
+                </button>
             ) : (
-                <button onClick={addStorage}><FontAwesomeIcon icon={faHeartRegular} /></button>
+                <button className="btncoeur vide" onClick={addStorage}>
+                    <img id="btncoeurvide" src="./heart.png" alt="Cœur vide" />
+                </button>
             )}
         </div>
     );
