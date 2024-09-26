@@ -1,13 +1,16 @@
 import axios from 'axios';
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import LikeIcon from './LikeIcon'
 const Card = ({athlete}) => {
+    const location = useLocation();
     const [isEditing, setIsEditing] = useState(false);
     const [editGoldMedal, setEditGoldMedal] = useState("");
     const [editSilverMedal, setEditSilverMedal] = useState("");
     const [editBronzeMedal, setEditBronzeMedal] = useState("");
-
+    const basePath = location.pathname.includes(`/favoris/${athlete.id}`)
+   ? `/favoris/${athlete.id}` // Already in category path, only add the ID
+   : `${athlete.id}`;
     function handleAthleteEdit(){
         const data = {
             name: athlete.name,
@@ -27,7 +30,7 @@ const Card = ({athlete}) => {
     return (
         <div className='card'>
             <div className='img_card'>
-            <Link id='a-card' to={`athlete/${athlete.id}`}><img id="photo_athlete" src={athlete.image} alt={`image de ${athlete.name}`} /></Link>
+            <Link id='a-card' to={`${basePath}`}><img id="photo_athlete" src={athlete.image} alt={`image de ${athlete.name}`} /></Link>
             </div>
             <section className='description_card'>
                 <p>{athlete.name}</p>

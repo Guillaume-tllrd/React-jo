@@ -29,16 +29,17 @@ const Favoris = () => {
     return (
         <>
         <Header/>
-        <h2>Mes favoris</h2>
+        <h2 className='titre-favoris'>Mes favoris ❤️</h2>
         <div className="result">
-          
+         <ul> 
        {favListData.length > 0 ? (favListData.map((athlete) => (
         <Card key={athlete.id} athlete={athlete} />))) : (
           <p>Aucun athlète sélectionné</p>
         )
        }
+       </ul> 
       </div>
-        
+
         </>
     );
 };

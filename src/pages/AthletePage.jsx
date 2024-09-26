@@ -7,6 +7,8 @@ import AppContext from '../components/AppContext';
 const AthletePage = () => {
     const [athlete, setAthlete] = useState({})
     const param = useParams();
+    console.log(param);
+    
     const id = param.id
     const app = useContext(AppContext);
 
@@ -15,7 +17,7 @@ const AthletePage = () => {
         .then((res) => setAthlete(res.data))
         .catch((err) => console.error(err))
     },[]) 
-    console.log(athlete)
+    
     return (
         <>
             <Header/>
