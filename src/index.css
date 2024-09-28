@@ -397,3 +397,13 @@ option {
   padding: 15px 0;
   text-align: center;
 }
+.flex-athlete {
+  display: flex;
+  flex-wrap: wrap;
+}
+.img-container{
+  width: 50%;
+}
+.img-container img {
+  width: 100%;
+}
